@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./style/cartas.css" />
+  <title>Conectando Sonhos</title>
+</head>
+
+<body>
+  <div id="interface">
+    <header id="cabecalho">
+      <div id="cabecalho-logotipo">
+        <img id="cabecalho-logotipo-img" src="./logotipo/logotipo.png" alt="Logotipo da página" />
+        <h1>Conectando <br>
+          Sonhos</h1>
+      </div>
+      <nav id="cabecalho-menu">
+        <h1>Menu Principal</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="cartas.html">Cartas</a></li>
+          <li><a href="cadastro.html">Cadastros</a></li>
+          <li><a href="#rodape">Contato</a></li>
+          <li id="menu-usuario"></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="titulo-carta">Escreva sua Cartinha para o Conectando Sonhos</h1>
+      <hr />
+      <section class="cartas">
+        <img src="./imagens_sobre/rena34.png" alt="Rena segurando carta" class="rena-carta" />
+        <div class="pergaminho">
+          <form id="form-carta">
+            <label>Nome da criança:</label><br />
+            <input type="text" id="nome-crianca" placeholder="Nome da criança..." required /><br />
+            <div class="linha-dupla">
+              <div class="form-group metade">
+                <label for="idade-crianca">Data de Nascimento:</label>
+                <input type="date" id="data-nascimento" required />
+              </div>
+              <div class="form-group metade">
+                <label for="presente">Presente desejado:</label>
+                <select id="presente" required>
+                  <option value="">Selecione um presente</option>
+                  <optgroup label="Brinquedos">
+                    <option value="bonecas">Bonecas e Acessórios</option>
+                    <option value="veiculos">Carrinhos e Veículos</option>
+                    <option value="herois">Bonecos de Super-herois e outros</option>
+                    <option value="pelucia">Bichinho de Pelúcia</option>
+                    <option value="jogos">Jogos e Quebra-Cabeças</option>
+                    <option value="educativos">Brinquedos Educativos/Montar</option>
+                  </optgroup>
+                  <optgroup label="Esportes e Lazer">
+                    <option value="bolas">Bola de Futebol/Vôlei/Basquete</option>
+                    <option value="rodas">Skate/Patins/Patinete</option>
+                    <option value="bicicleta">Bicicleta</option>
+                  </optgroup>
+                  <optgroup label="Escola e Arte">
+                    <option value="kit-escolar">Kit de Lápis e Caderno</option>
+                    <option value="mochila">Mochila ou Estojo</option>
+                    <option value="livros">Livros e Gibis</option>
+                    <option value="arte">Tintas e Pintura</option>
+                  </optgroup>
+                  <optgroup label="Roupas e Calçados">
+                    <option value="roupa">Roupas</option>
+                    <option value="tenis">Tênis</option>
+                    <option value="sandalia">Sandália/Chinelo</option>
+                  </optgroup>
+                  <optgroup label="Outros">
+                    <option value="higiene">Kit de Higiene/Beleza</option>
+                    <option value="tecnologia">Eletrônicos</option>
+                    <option value="outro">Outro</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+
+            <label>Escreva sua Cartinha:</label><br />
+            <textarea id="texto-carta" rows="8"
+              placeholder="Querido Renatinho, eu gostaria de ganhar..."></textarea><br />
+
+            <label>Ou Envie uma Foto da sua Cartinha:</label><br />
+            <input type="file" id="foto-carta" accept="image/*" /><br /><br />
+
+            <button type="submit" class="botao1">Enviar Carta</button>
+          </form>
+        </div>
+        <img src="./imagens_sobre/rena32.png" alt="Rena escrevendo carta" class="rena-carta" />
+      </section>
+      <h1 class="titulo-carta">Adote uma Carta</h1>
+      <hr />
+      <section id="parte2">
+        <div id="quadro1">
+          <h2>Cartinhas</h2>
+          <hr />
+          <div class="container-icones">
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="quadro2">
+          <h2>Doe por presente</h2>
+          <hr />
+          <div class="formulario-presente">
+            <div class="form-group col-md-5">
+              <label for="presente" class="control-label">O que você gostaria de doar?</label>
+              <select class="custom-select" id="presente" required>
+                <optgroup label="Brinquedos">
+                  <option value="bonecas">Bonecas e Acessórios</option>
+                  <option value="veiculos">Carrinhos e Veículos</option>
+                  <option value="herois">
+                    Bonecos de Super-herois e outros
+                  </option>
+                  <option value="jogos">Jogos e Quebra-Cabeças</option>
+                  <option value="educativos">
+                    Brinquedos Educativos/Montar
+                  </option>
+                </optgroup>
+
+                <optgroup label="Esportes e Lazer">
+                  <option value="bolas">
+                    Bola de Futebol/Vôlei/Basquete
+                  </option>
+                  <option value="rodas">Skate/Patins/Patinete</option>
+                  <option value="bicicleta">Bicicleta</option>
+                </optgroup>
+
+                <optgroup label="Escola e Arte">
+                  <option value="kit-escolar">Kit de Lápis e Caderno</option>
+                  <option value="mochila">Mochila ou Estojo</option>
+                  <option value="livros">Livros e Gibis</option>
+                  <option value="arte">Tintas e Pintura</option>
+                </optgroup>
+
+                <optgroup label="Roupas e Calçados">
+                  <option value="roupa">Roupas</option>
+                  <option value="tenis">Tênis</option>
+                  <option value="sandalia">Sandália/Chinelo</option>
+                </optgroup>
+
+                <optgroup label="Outros">
+                  <option value="higiene">Kit de Higiene/Beleza</option>
+                  <option value="tecnologia">Eletrônicos</option>
+                  <option value="outro">Outro</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="form-group col-md-5">
+              <label for="local" class="control-label">Ponto de Coleta onde deseja levar o pedido</label>
+              <select class="custom-select" id="local" required>
+                <option value="rua1">
+                  Rua Alberto de Azevedo, n°379 - Bairro: Santa Helena -
+                  Franca/SP
+                </option>
+                <option value="rua2">
+                  Avenida Paulo Pucci, n°79 - Bairro: Santa Efigênia -
+                  Franca/SP
+                </option>
+                <option value="rua3">
+                  Rua Cândido Portinari, n°899 - Bairro: Campos Elísios -
+                  Franca/SP
+                </option>
+                <option value="rua4">
+                  Rua Augusto dos Anjos, n°551 - Bairro: Jardim das Oliveiras
+                  - Franca/SP
+                </option>
+                <option value="rua5">
+                  Rua Manoel de Barros, n°628 - Bairro: Jardim Esmeralda -
+                  Franca/SP
+                </option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" onclick="escolher()" class="botao1">
+            Escolher
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer id="rodape">
+      <p>
+        <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://github.com/signup" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+      </p>
+      <div id="rodape2">
+        <span class="rodape2-texto">&copy; 2026 Todos os direitos reservados.</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./script/carta.js"></script>
+  <script src="./script/menu.js"></script>
+</body>
+
+</html>

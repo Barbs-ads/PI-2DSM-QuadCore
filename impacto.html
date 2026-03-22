@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./style/impacto.css" />
+  <link rel="shortcut icon" href="./logotipo/favicon.ico" type="image/x-icon" />
+  <title>Conectando Sonhos</title>
+</head>
+
+<body>
+  <div id="interface">
+    <header id="cabecalho">
+      <div id="cabecalho-logotipo">
+        <img id="cabecalho-logotipo-img" src="./logotipo/logotipo.png" alt="Logotipo da página" />
+        <h1>
+          Conectando <br />
+          Sonhos
+        </h1>
+      </div>
+      <nav id="cabecalho-menu">
+        <h1>Menu Principal</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="cartas.html">Cartas</a></li>
+          <li><a href="cadastro.html">Cadastros</a></li>
+          <li><a href="#rodape">Contato</a></li>
+          <li id="menu-usuario"></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="conteudo-impacto">
+      <section class="titulo-pagina-impacto">
+        <h1>Transparência e Propósito</h1>
+        <p class="subtitulo">Veja como sua solidariedade transforma vidas.</p>
+        <hr />
+      </section>
+
+      <section class="container-card-impacto1">
+        <div class="conteudo-centralizado">
+          <h2 class="titulo-secao-icone centro">
+            <i class="bi bi-star-fill icone-dourado"></i>
+            O Resgate da Infância
+          </h2>
+          <p class="texto-corrido">
+            Para uma criança em vulnerabilidade, um brinquedo não é apenas um
+            objeto. É um portal para um mundo onde ela pode ser tudo o que
+            sonha. É a ferramenta vital para construir esperança em meio a uma
+            realidade difícil.
+          </p>
+          <p class="texto-corrido destaque">
+            Quando datas comemorativas passam em branco, a mensagem que fica é a de
+            esquecimento. Sua doação no Conectando Sonhos é um abraço poderoso
+            que diz: "Você importa, nós te vemos".
+          </p>
+        </div>
+      </section>
+
+      <section class="container-card-impacto">
+        <h2 class="titulo-card-topo">O Cenário da Infância</h2>
+
+        <div class="grid-impacto cards-internos">
+          <div class="coluna-card1">
+            <h3 class="subtitulo-icone">
+              <i class="bi bi-house-heart-fill icone-vinho"></i>
+              Vulnerabilidade Social
+            </h3>
+            <div class="grafico-rosca-container">
+              <div class="grafico-rosca valor-63">
+                <span class="texto-centro-grafico">63%</span>
+              </div>
+            </div>
+            <p class="texto-descritivo">
+              Mais da metade das crianças brasileiras vivem em situação de pobreza, o que limita o acesso a itens
+              básicos e torna presentes como brinquedos um luxo para muitas famílias.<br>
+              Fonte: UNICEF Brasil
+            </p>
+          </div>
+
+          <div class="coluna-card2">
+            <h3 class="subtitulo-icone">
+              <i class="bi bi-puzzle-fill icone-dourado"></i>
+              O Poder do Estímulo
+            </h3>
+
+            <div class="grupo-barra-progresso">
+              <div class="label-barra">
+                <i class="bi bi-emoji-frown-fill icone-vermelho"></i>
+                <span>Crianças até 5 anos que não possuem brinquedos<br> Fonte: UNICEF DATA</span>
+              </div>
+              <div class="trilho-barra">
+                <div class="preenchimento-barra barra-vermelha largura-14">
+                  <span class="texto-barra">14%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="grupo-barra-progresso">
+              <div class="label-barra">
+                <i class="bi bi-emoji-frown-fill icone-vermelho"></i>
+                <span>Crianças entre 2 e 4 anos que não recebem estímulos suficientes em casa<br> Fonte: UNICEF
+                  DATA</span>
+              </div>
+              <div class="trilho-barra">
+                <div class="preenchimento-barra barra-vermelha largura-40">
+                  <span class="texto-barra">40%</span>
+                </div>
+              </div>
+            </div>
+            <p class="texto-descritivo">
+              O brincar é essencial para o desenvolvimento cognitivo, social e emocional da criança.
+              Estudos mostram que melhora linguagem, fortalece vínculos e desenvolve criatividade e resolução de problemas.<br> Fonte: UNICEF e American Academy of Pediatrics. <br><br>
+              Sua doação ajuda a fechar essa lacuna de desenvolvimento vital.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-card-impacto">
+        <h2 class="titulo-card-topo">Nossa Missão Urgente</h2>
+        <div class="conteudo-centralizado largura-media">
+          <div class="coluna-card3">
+            <div class="item-meta">
+              <div class="cabecalho-meta">
+                <span class="titulo-meta"><i class="bi bi-gift-fill icone-vinho"></i> Sonhos
+                  Adotados</span>
+                <span class="valor-meta" id="cartas-status">--</span>
+              </div>
+              <div class="meta-conteudo">
+                <div class="trilho-barra grosso">
+                  <div class="preenchimento-barra barra-dourada largura-45">
+                    <span class="texto-barra-interno" id="cartas-percent">--</span>
+                  </div>
+                </div>
+                <p class="alerta-meta centro">
+                  <span class="alerta-titulo-icone">Atenção:</span>
+                  <span class="alerta-contagem" id="cartas-restantes">--</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="coluna-card4">
+            <div class="item-meta">
+              <div class="cabecalho-meta">
+                <span class="titulo-meta"><i class="bi bi-people-fill icone-vinho"></i>
+                  Voluntários</span>
+                <span class="valor-meta" id="voluntarios-status">--</span>
+              </div>
+              <div class="meta-conteudo">
+                <div class="trilho-barra grosso">
+                  <div class="preenchimento-barra barra-vinho largura-66">
+                    <span class="texto-barra-interno" id="voluntarios-total">--</span>
+                  </div>
+                </div>
+                <p class="alerta-meta centro">
+                  <span class="alerta-titulo-icone">Participe:</span>
+                  <span class="alerta-contagem">
+                    Precisamos de mais força!
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-card-impacto3">
+        <div class="conteudo-centralizado">
+          <h2 class="titulo-secao-icone centro">Não Deixe a Magia Apagar</h2>
+          <p class="texto-corrido">
+            Restam <strong id="cartas-restantes-destaque">--</strong><br>Ainda há histórias esperando
+            um final feliz. Você tem o poder de escrever esse final hoje.
+          </p>
+          <div class="container-botao">
+            <a href="cartas.html" class="botao-adotar">
+              Quero Adotar uma Cartinha
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="rodape">
+      <p>
+        <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://github.com/signup" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+      </p>
+      <div id="rodape2">
+        <span class="rodape2-texto">&copy; 2026 Todos os direitos reservados.</span>
+      </div>
+    </footer>
+  </div>
+  <!-- Bootstrap JS, Popper.js e jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <!-- <script src="./script/carta.js"></script> -->
+  <script src="./script/impacto.js"></script>
+  <script src="./script/menu.js"></script>
+</body>
+
+</html>

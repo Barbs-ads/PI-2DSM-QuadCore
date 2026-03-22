@@ -1,0 +1,102 @@
+.titulo-secao {
+  text-align: center;
+  padding: 40px 20px 10px;
+}
+
+.titulo-secao h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.titulo-secao p {
+  font-size: 1.1rem;
+  color: #daa520;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container-icones {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 50px auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.img-coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-renas {
+  width: 90%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.sonhos-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 1;
+}
+
+.sonho-card {
+  background: #f0e5c3;
+  border: 2px solid #daa520;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sonho-card h2 {
+  font-family: "Calligraffitti";
+  color: #491010;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sonho-card h3 {
+  color: #daa520;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sonho-card p {
+  line-height: 1.7;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.sonho-realizado {
+  background: #daa520;
+  color: #491010;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+@media (max-width: 992px) {
+  .container-icones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-coluna {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
