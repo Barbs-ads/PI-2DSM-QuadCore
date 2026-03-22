@@ -1,31 +1,28 @@
-/* Container do formulário */
 .login-container {
   max-width: 400px;
   margin: 60px auto;
   padding: 40px;
-  background: #f0e5c3; /* similar aos quadros do site */
+  background: #f0e5c3;
   border: 2px solid #daa520;
   border-radius: 15px;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-/* Título */
 .titulo-login {
-  font-family: 'Calligraffitti', cursive;
+  font-family: "Calligraffitti", cursive;
   font-size: 2rem;
   color: #491010;
   margin-bottom: 25px;
 }
 
 .subtitulo-login {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #491010;
   margin-top: 20px;
 }
 
-/* Inputs e select */
 .form-login input,
 .form-login select {
   width: 100%;
@@ -44,9 +41,8 @@
   box-shadow: 0 0 5px rgba(218, 165, 32, 0.5);
 }
 
-/* Botões */
-/* Botões do formulário */
-.botao1, .botao2 {
+.botao1,
+.botao2 {
   width: 100%;
   padding: 12px;
   margin-top: 15px;
@@ -55,43 +51,40 @@
   font-size: 1rem;
   cursor: pointer;
   border: 2px solid;
-  text-decoration: none; /* remove sublinhado */
+  text-decoration: none;
   transition: 0.3s;
   display: inline-block;
 }
 
-/* Botão Entrar */
-/* Botão Entrar atualizado */
 .botao1 {
-  background-color: #daa520; /* dourado */
-  color: #491010; /* texto escuro normalmente */
+  background-color: #daa520;
+  color: #491010;
   border-color: #491010;
   text-decoration: none;
   transition: 0.3s;
 }
 
 .botao1:hover {
-  background-color: #f5b107; /* dourado mais claro */
-  color: #ffffff; /* texto branco no hover */
+  background-color: #f5b107;
+  color: #ffffff;
   font-weight: bold;
-  text-shadow: 0 0 3px #491010; /* leve sombra para destaque */
+  text-shadow: 0 0 3px #491010;
   text-decoration: none;
 }
 
-/* Botão Criar conta */
 .botao2 {
-  background-color: #491010; /* marrom escuro */
-  color: #daa520; /* texto dourado */
+  background-color: #491010;
+  color: #daa520;
   border-color: #daa520;
-  text-decoration: none; /* remove sublinhado */
+  text-decoration: none;
 }
 
 .botao2:hover {
-  background-color: #2c0606; /* fundo mais escuro no hover */
-  color: #ffffff; /* texto branco no hover */
+  background-color: #2c0606;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
-  text-shadow: 0 0 3px #daa520; /* leve brilho dourado */
+  text-shadow: 0 0 3px #daa520;
 }
 
 .container-form {
@@ -103,7 +96,6 @@
   border: 3px solid #daa520;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-
 
 .form-control {
   border-radius: 8px;
@@ -122,7 +114,6 @@
   display: block;
 }
 
-/* Separador OU */
 .ou-linha {
   display: flex;
   align-items: center;
@@ -132,7 +123,7 @@
 
 .ou-linha::before,
 .ou-linha::after {
-  content: '';
+  content: "";
   flex: 1;
   border-bottom: 1px solid #491010;
 }

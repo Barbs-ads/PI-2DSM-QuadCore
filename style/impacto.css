@@ -357,12 +357,12 @@
 }
 
 .preenchimento-barra span {
-  display: inline-block; 
+  display: inline-block;
   position: relative;
-  z-index: 1; 
-  color: white; 
-  text-align: center; 
-  width: 100%; 
+  z-index: 1;
+  color: white;
+  text-align: center;
+  width: 100%;
 }
 
 .texto-barra {
