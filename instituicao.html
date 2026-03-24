@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./style/usuario.css" />
+  <link rel="shortcut icon" href="./logotipo/favicon.ico" type="image/x-icon" />
+  <title>Conectando Sonhos - Instituição</title>
+</head>
+
+<body>
+  <div id="interface">
+    <header id="cabecalho">
+      <div id="cabecalho-logotipo">
+        <img id="cabecalho-logotipo-img" src="./logotipo/logotipo.png" alt="Logotipo da página" />
+        <h1>Conectando <br /> Sonhos</h1>
+      </div>
+      <nav id="cabecalho-menu">
+        <h1>Menu Principal</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="cartas.html">Cartas</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li><a href="#rodape">Contato</a></li>
+          <li id="menu-usuario"></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container my-5">
+      <h1 class="titulo-carta text-center mb-4">Cartinhas Cadastradas</h1>
+     <div class="cartinhas-instituicao d-flex flex-wrap justify-content-center"></div>
+    </main>
+
+    <footer id="rodape">
+      <p>
+        <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://github.com/signup" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+      </p>
+      <div id="rodape2">
+        <span class="rodape2-texto">&copy; 2026 Todos os direitos reservados.</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./script/script.js"></script>
+  <script src="./script/menu.js"></script>
+  <script src="./script/instituicao.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+main {
+  padding: 10px 10px;
+  min-height: 80vh;
+  background-color: #fff8e7;
+  border: #daa520 solid 2px;
+  border-radius: 20px;
+}
+
+.titulo-carta {
+  text-align: center;
+  font-family: "Calligraffitti", cursive;
+  font-size: 2rem;
+  color: #491010;
+  margin-bottom: 30px;
+}
+
+.container-icones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.card-carta {
+  background-color: #fff8e7;
+  border: 2px solid #daa520;
+  border-radius: 12px;
+  width: 320px;
+  padding: 20px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-carta:hover {
+  transform: translateY(-5px);
+  box-shadow: 3px 3px 12px rgba(0,0,0,0.3);
+}
+
+.card-carta h2 {
+  font-size: 1.3rem;
+  color: #491010;
+  margin-bottom: 10px;
+}
+
+.card-carta p {
+  font-size: 0.95rem;
+  color: #491010;
+  margin-bottom: 10px;
+}
+
+.status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.status.reservada { background-color: #f0ad4e; color: #fff; }
+.status.enviada { background-color: #5bc0de; color: #fff; }
+.status.entregue { background-color: #5cb85c; color: #fff; }
+
+button.botao1 {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #daa520;
+  color: #491010;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button.botao1:hover {
+  background-color: #f5b107;
+  color: #fff;
+}
