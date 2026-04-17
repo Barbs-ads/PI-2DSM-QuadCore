@@ -1,75 +1,64 @@
 
-//ATIVAR ESSA PARTE QUANDO O BACKEND ESTIVER PRONTO E APAGAR O RESTANTE, POR ENQUANTO PARA TESTE USAR A OUTRA PARTE
-// // LOGIN
-// document.getElementById("formLogin").addEventListener("submit", async (e) => {
-//   e.preventDefault();
-
-//   const email = document.getElementById("email").value;
-//   const senha = document.getElementById("senha").value;
-//   const tipo = document.getElementById("tipo").value;
-
-//   const resposta = await fetch("http://localhost:3000/login", {
-//     method: "POST",
-//     headers: {"Content-Type": "application/json"},
-//     body: JSON.stringify({ email, senha, tipo })
-//   });
-
-//   const dados = await resposta.json();
-
-//   if (dados.sucesso) {
-//     localStorage.setItem("usuario", JSON.stringify(dados.usuario));
-
-//     if (tipo === "doador") {
-//       window.location.href = "doador.html";
-//     } else {
-//       window.location.href = "instituicao.html";
-//     }
-//   } else {
-//     alert("Login inválido");
-//   }
-// });
-
-// // CADASTRO
-// document.getElementById("formCadastro").addEventListener("submit", async (e) => {
-//   e.preventDefault();
-
-//   const nome = document.getElementById("nomeCadastro").value;
-//   const email = document.getElementById("emailCadastro").value;
-//   const senha = document.getElementById("senhaCadastro").value;
-//   const tipo = document.getElementById("tipoCadastro").value;
-
-//   await fetch("http://localhost:3000/cadastro", {
-//     method: "POST",
-//     headers: {"Content-Type": "application/json"},
-//     body: JSON.stringify({ nome, email, senha, tipo })
-//   });
-
-//   alert("Cadastro realizado!");
-// });
-
-
-
-
-
-
-
-document.getElementById("formLogin").addEventListener("submit", (e) => {
+document.getElementById("formLogin").addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  const email = document.getElementById("email").value;
-  const tipo = document.getElementById("tipo").value;
+  const email = document.getElementById("email").value.toLowerCase();
+  const senha = document.getElementById("senha").value;
+  
+  // Troque 'false' para 'true' quando subir o servidor Node.js - LEMBRAR DE MUDAR AQUI PARA FUNCIONAR COM NODE.JS E POSTGRESQL
+  const usarApiReal = false; 
 
-  const usuario = {
-    nome: email.split("@")[0],
-    email: email,
-    tipo: tipo
-  };
+  if (usarApiReal) {
+    /* ESTRUTURA PARA POSTGRESQL + NODE.JS (RNF002 e RNF003)
+       Aqui o backend fará a criptografia e identificação do perfil 
+    */
+    try {
+      const resposta = await fetch("http://localhost:3000/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, senha })
+      });
 
-  localStorage.setItem("usuario", JSON.stringify(usuario));
+      const dados = await resposta.json();
 
-  if (tipo === "doador") {
-    window.location.href = "doador.html";
+      if (dados.sucesso) {
+        localStorage.setItem("usuario", JSON.stringify(dados.usuario));
+        direcionarUsuario(dados.usuario.tipo);
+      } else {
+        alert("Erro no login: " + dados.mensagem);
+      }
+    } catch (erro) {
+      console.error("Erro ao conectar com a API:", erro);
+    }
   } else {
-    window.location.href = "instituicao.html";
+    /* MODO DE TESTE (IDENTIFICAÇÃO AUTOMÁTICA)
+       Simula o requisito de usabilidade intuitiva (RNF004) [cite: 30]
+    */
+    let tipoIdentificado = "doador";
+
+    if (email.includes("admin")) {
+      tipoIdentificado = "admin";
+    } else if (email.includes("ong") || email.includes("pastoral")) {
+      tipoIdentificado = "instituicao";
+    }
+
+    const usuarioSimulado = {
+      nome: email.split("@")[0],
+      email: email,
+      tipo: tipoIdentificado
+    };
+
+    localStorage.setItem("usuario", JSON.stringify(usuarioSimulado));
+    direcionarUsuario(tipoIdentificado);
   }
 });
+
+function direcionarUsuario(tipo) {
+  const rotas = {
+    "doador": "doador.html",
+    "instituicao": "instituicao.html",
+    "admin": "admin.html"
+  };
+  
+  window.location.href = rotas[tipo] || "index.html";
+}

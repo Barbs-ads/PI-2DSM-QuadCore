@@ -121,6 +121,15 @@
   margin: 25px 0;
 }
 
+
+.form-login input {
+  margin-bottom: 15px;
+}
+
+.ou-linha {
+  margin: 30px 0;
+}
+
 .ou-linha::before,
 .ou-linha::after {
   content: "";
@@ -140,3 +149,4 @@
     padding: 20px;
   }
 }
+

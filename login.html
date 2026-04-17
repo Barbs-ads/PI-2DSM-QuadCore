@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 
 <html lang="pt-BR">
 
@@ -60,6 +60,87 @@
   </div>
   </main>
   <footer id="rodape">
+    <p>
+      <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://github.com/signup" target="_blank"><i class="bi bi-github"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+    </p>
+
+    <div id="rodape2">
+      <span class="rodape2-texto">&copy; 2026 Todos os direitos reservados.</span>
+    </div>
+  </footer>
+  </div>
+  <script src="./script/script.js"></script>
+  <script src="./script/login.js"></script>
+  <script src="./script/menu.js"></script>
+
+
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Conectando Sonhos</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/login.css">
+</head>
+
+<body>
+  <div id="interface">
+    <header id="cabecalho">
+      <div id="cabecalho-logotipo">
+        <img id="cabecalho-logotipo-img" src="./logotipo/logotipo.png" alt="Logotipo">
+        <h1>Conectando <br> Sonhos</h1>
+      </div>
+
+      <nav id="cabecalho-menu">
+        <ul id="menu-lista">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="cartas.html">Cartas</a></li>
+          <li><a href="cadastro.html">Cadastros</a></li>
+          <li><a href="#rodape">Contato</a></li>
+          <li id="menu-usuario"></li>
+        </ul>
+      </nav>
+    </header>
+
+<main id="cadastro-main">
+  <div class="container-form">
+    <h2 class="titulo-login">Entrar</h2>
+
+    <form id="formLogin" class="form-login">
+  <input type="email" name="email" placeholder="Email" id="email" required>
+  <input type="password" name="senha" placeholder="Senha" id="senha" required>
+
+  <select id="tipo" name="tipo" style="display: none;">
+    <option value="doador">Sou Doador</option>
+    <option value="instituicao">Sou Instituição</option>
+    <option value="admin">Sou Administrador</option>
+  </select>
+
+  <button type="submit" class="botao1">Entrar</button>
+</form>
+
+    <div class="ou-linha">
+      <span>OU</span>
+    </div>
+
+    <h3 class="subtitulo-login">Não tem conta?</h3>
+    <a href="cadastro.html" class="botao2">Criar conta</a>
+  </div>
+</main>
+<footer id="rodape">
     <p>
       <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><i class="bi bi-facebook"></i></a>
       <a href="https://github.com/signup" target="_blank"><i class="bi bi-github"></i></a>
