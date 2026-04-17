@@ -15,7 +15,7 @@
   font-family: "Open Sans", sans-serif;
 }
 .pergaminho {
-  background-image: url("../fundo/pergaminho4.png");
+  background-image: url("../fundo/pergaminho5.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -65,11 +65,11 @@ label {
   display: block;
   text-align: center;
   font-weight: bolder;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 #form-carta {
-  margin-top: 110px;
-  margin-bottom: 190px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .rena-carta {
   width: 90%;
