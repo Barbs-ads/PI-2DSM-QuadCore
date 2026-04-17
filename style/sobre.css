@@ -16,12 +16,12 @@ h1.titulo-sobre {
   font-size: 1.15rem;
   line-height: 1.8;
   padding: 40px;
-  background: rgba(255, 255, 255, 0.05); 
-  border: 1px solid rgba(218, 165, 32, 0.3); 
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(218, 165, 32, 0.3);
   border-radius: 20px;
-  backdrop-filter: blur(5px); 
+  backdrop-filter: blur(5px);
   text-align: center;
-} 
+}
 .sobre-resumo {
   max-width: 950px;
   margin: 0 auto 35px auto;
